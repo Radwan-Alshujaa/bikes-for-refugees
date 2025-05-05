@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 0.7rem;
 }
 
 .navigation__link {
@@ -95,7 +96,10 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button{
+  border: none;
+  
+}
 
 
 /* Content */
@@ -120,7 +124,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg ");
   background-color: var(--grey-light);
 }
 
