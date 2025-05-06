@@ -75,6 +75,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  transition: .3s;
+}
+.navigation__link:hover{
+  color: var(--orange-dark);
 }
 
 
@@ -96,12 +100,30 @@ p {
 
 /* Buttons */
 
-button{
-  border: none;
-  
+button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 6px;
+  padding: 5px 7px;
+  transition: 0.3s;
 }
-
-
+.hero button:last-of-type {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  margin-left: 15px;
+}
+button:hover {
+  background-color: var(--orange-light);
+  color: var(--orange-dark);
+}
+.hero button:last-of-type:hover {
+  background-color: var(--orange-dark);
+  color: var(--orange-light);
+}
 /* Content */
 
 .content {
@@ -124,8 +146,15 @@ button{
 /* hero */
 
 .hero {
-  background-image: url("../images/header-bike.jpg ");
+  background-image: url(../images/header-bike.jpg);
+  background-repeat: no-repeat;
   background-color: var(--grey-light);
+  background-size: cover;
+  height: 250px;
+  padding-left: 20px;
+  color: var(--white);
+  padding-top: 100px;
+  margin-bottom: 2.5rem;
 }
 
 .hero h1 {
@@ -137,7 +166,11 @@ button{
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
+.main > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
 /* Headings */
 
@@ -222,7 +255,13 @@ button{
   flex-direction: column;
   min-width: 350px;
 }
-
+.sidebar .article {
+  display: flex;
+  gap: 15px;
+}
+.sidebar a {
+  text-align: right;
+}
 /* Footer */
 
 .footer {
